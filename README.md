@@ -1,19 +1,21 @@
 # 🤖 Binance Futures Trading Bot (Testnet)
 
 A modular Python CLI trading bot for Binance Futures Testnet (USDT-M). Supports MARKET and LIMIT order execution for both BUY and SELL via a clean command-line interface.
-
-Built as part of the Primetrade.ai Python Developer internship assignment — and extended with production-inspired features including live risk validation, dry-run simulation, price-triggered watch mode, and structured JSON logging.
+Built with a modular architecture emphasizing validation, observability, risk awareness, and developer experience through structured logging, live price checks, dry-run simulation, and automated watch mode execution.
 
 ---
 
 ## Screenshots
-## Screenshots
+Market Order:
 ![Market Order](assets/market.png)
+Limit Order:
 ![Limit order](assets/limit1.png)
 ![Limit order](assets/limit2.png)
+Watch Mode:
 ![Watch Mode](assets/watch1.png)
 ![Watch Mode](assets/watch2.png)
-
+Dry Run:
+![Dry Run](assets/dry_run.png)
 ---
 
 ## Project Structure
@@ -63,8 +65,6 @@ BINANCE_API_SECRET=your_secret_key_here
 BINANCE_BASE_URL=https://demo-fapi.binance.com
 ```
 
-> Get free API keys from [Binance Demo Trading](https://www.binance.com/en/futures/BTCUSDT) — Account → API Management → Create API. No KYC required, no real money involved.
-
 ---
 
 ## How to Run
@@ -93,7 +93,7 @@ python cli.py --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.01 --price 
 
 ---
 
-### Dry Run — simulate without placing a real order
+### Dry Run: simulate without placing a real order
 ```bash
 python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity 0.01 --dry-run
 ```
@@ -109,7 +109,7 @@ No order was placed on the exchange.
 
 ---
 
-### Watch Mode — auto-trigger when price hits your target
+### Watch Mode: auto-trigger when price hits your target
 ```bash
 python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity 0.01 --watch --target-price 60000
 ```
@@ -130,7 +130,7 @@ python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity 0.01 --watch 
 
 ---
 
-### Interactive Mode — guided prompts, no flags needed
+### Interactive Mode: guided prompts, no flags needed
 ```bash
 python cli.py
 ```
@@ -245,3 +245,14 @@ cli.py  (entry point)
    │
    └── logging_config.py    structured JSON logger used across all modules
 ```
+## Engineering Decisions
+
+This project intentionally prioritizes software quality and operational safety over minimal API wrapping.
+
+Key design choices include:
+
+- Modular separation between CLI orchestration, validation, API communication, and execution logic.
+- Structured JSON logging for observability and easier debugging.
+- Dry-run simulation for safe testing without exchange execution.
+- Live market price validation to reduce high-deviation order submissions.
+- Watch mode automation built with controlled polling intervals to balance responsiveness and API rate limits.
