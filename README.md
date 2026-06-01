@@ -7,14 +7,21 @@ Built with a modular architecture emphasizing validation, observability, risk aw
 
 ## Screenshots
 Market Order:
+
 ![Market Order](assets/market.png)
+
 Limit Order:
+
 ![Limit order](assets/limit1.png)
 ![Limit order](assets/limit2.png)
+
 Watch Mode:
+
 ![Watch Mode](assets/watch1.png)
 ![Watch Mode](assets/watch2.png)
+
 Dry Run:
+
 ![Dry Run](assets/dry_run.png)
 ---
 
