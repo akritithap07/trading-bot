@@ -1,0 +1,144 @@
+2026-06-01 16:16:02 | INFO     | place_order | Placing MARKET BUY order | BTCUSDT qty=0.01
+2026-06-01 16:16:02 | DEBUG    | post | POST https://demo-fapi.binance.com/fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01, 'timestamp': 1780310762253}
+2026-06-01 16:16:03 | DEBUG    | post | Response: {'orderId': 13687755005, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'WtRM23QLvfRXsxrco9wATk', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.0100', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1780310763715}
+2026-06-01 16:16:03 | INFO     | place_order | Order placed successfully | orderId=13687755005 status=NEW
+2026-06-01 16:16:54 | INFO     | place_order | Placing MARKET SELL order | ETHUSDT qty=0.1
+2026-06-01 16:16:54 | DEBUG    | post | POST https://demo-fapi.binance.com/fapi/v1/order | params: {'symbol': 'ETHUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 0.1, 'timestamp': 1780310814315}
+2026-06-01 16:16:55 | DEBUG    | post | Response: {'orderId': 8926277181, 'symbol': 'ETHUSDT', 'status': 'NEW', 'clientOrderId': 'mdoX1IcGyEbs5lHoRLpltg', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.100', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1780310815722}
+2026-06-01 16:16:55 | INFO     | place_order | Order placed successfully | orderId=8926277181 status=NEW
+2026-06-01 16:17:38 | INFO     | place_order | Placing MARKET BUY order | BTCUSDT qty=0.2
+2026-06-01 16:17:38 | DEBUG    | post | POST https://demo-fapi.binance.com/fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.2, 'timestamp': 1780310858354}
+2026-06-01 16:17:39 | DEBUG    | post | Response: {'orderId': 13687874771, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'OiB9WrptdLfYVto9MTMYVd', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.2000', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1780310859764}
+2026-06-01 16:17:39 | INFO     | place_order | Order placed successfully | orderId=13687874771 status=NEW
+2026-06-01 16:18:01 | WARNING  | main | Validation failed: Price is required for LIMIT orders
+2026-06-01 16:18:18 | WARNING  | main | Validation failed: Invalid symbol 'DOGEUSDT'. Supported: BTCUSDT, ETHUSDT, BNBUSDT, SOLUSDT, XRPUSDT
+2026-06-01 16:18:30 | WARNING  | main | Validation failed: Quantity must be greater than 0
+{"timestamp": "2026-06-01 11:48:18 UTC", "level": "DEBUG", "module": "client", "function": "get_price", "message": "Live price fetched | symbol=BTCUSDT price=72725.3"}
+{"timestamp": "2026-06-01 11:48:18 UTC", "level": "DEBUG", "module": "client", "function": "get_price", "message": "Live price fetched | symbol=BTCUSDT price=72725.3"}
+{"timestamp": "2026-06-01 11:48:18 UTC", "level": "INFO", "module": "orders", "function": "place_order", "message": "DRY RUN | MARKET BUY BTCUSDT qty=0.01 live_price=72725.3 estimated_cost=727.25 USDT"}
+{"timestamp": "2026-06-01 11:48:18 UTC", "level": "INFO", "module": "cli", "function": "main", "message": "CLI session completed successfully"}
+{"timestamp": "2026-06-01 11:49:33 UTC", "level": "DEBUG", "module": "client", "function": "get_price", "message": "Live price fetched | symbol=BTCUSDT price=72737.5"}
+{"timestamp": "2026-06-01 11:49:33 UTC", "level": "INFO", "module": "orders", "function": "place_order", "message": "Placing order | MARKET BUY BTCUSDT qty=0.01"}
+{"timestamp": "2026-06-01 11:49:56 UTC", "level": "DEBUG", "module": "client", "function": "get_price", "message": "Live price fetched | symbol=BTCUSDT price=72737.1"}
+{"timestamp": "2026-06-01 11:49:56 UTC", "level": "DEBUG", "module": "orders", "function": "check_risk", "message": "Risk check | symbol=BTCUSDT live=72737.1 entered=50000.0 deviation=-31.26%"}
+{"timestamp": "2026-06-01 11:50:23 UTC", "level": "INFO", "module": "orders", "function": "place_order", "message": "Placing order | LIMIT BUY BTCUSDT qty=0.01 price=50000.0"}
+{"timestamp": "2026-06-01 11:50:41 UTC", "level": "DEBUG", "module": "client", "function": "get_price", "message": "Live price fetched | symbol=BTCUSDT price=72675.4"}
+{"timestamp": "2026-06-01 11:50:41 UTC", "level": "INFO", "module": "cli", "function": "run_watch_mode", "message": "Watch mode started | symbol=BTCUSDT side=BUY target=999999.0 qty=0.01"}
+{"timestamp": "2026-06-01 11:50:42 UTC", "level": "DEBUG", "module": "client", "function": "get_price", "message": "Live price fetched | symbol=BTCUSDT price=72675.4"}
+{"timestamp": "2026-06-01 11:50:42 UTC", "level": "INFO", "module": "cli", "function": "run_watch_mode", "message": "Watch mode triggered | symbol=BTCUSDT current=72675.4 target=999999.0"}
+{"timestamp": "2026-06-01 11:50:42 UTC", "level": "INFO", "module": "orders", "function": "place_order", "message": "Placing order | MARKET BUY BTCUSDT qty=0.01"}
+{"timestamp": "2026-06-01 11:53:43 UTC", "level": "DEBUG", "module": "client", "function": "get_price", "message": "Live price fetched | symbol=BTCUSDT price=72640.8"}
+{"timestamp": "2026-06-01 11:53:43 UTC", "level": "INFO", "module": "cli", "function": "run_watch_mode", "message": "Watch mode started | symbol=BTCUSDT side=BUY target=999999.0 qty=0.01"}
+{"timestamp": "2026-06-01 11:53:44 UTC", "level": "DEBUG", "module": "client", "function": "get_price", "message": "Live price fetched | symbol=BTCUSDT price=72640.8"}
+{"timestamp": "2026-06-01 11:53:44 UTC", "level": "INFO", "module": "cli", "function": "run_watch_mode", "message": "Watch mode triggered | symbol=BTCUSDT current=72640.8 target=999999.0"}
+{"timestamp": "2026-06-01 11:53:44 UTC", "level": "INFO", "module": "orders", "function": "place_order", "message": "Placing order | MARKET BUY BTCUSDT qty=0.01"}
+{"timestamp": "2026-06-01 11:54:04 UTC", "level": "DEBUG", "module": "client", "function": "get_price", "message": "Live price fetched | symbol=BTCUSDT price=72640.8"}
+{"timestamp": "2026-06-01 11:54:04 UTC", "level": "INFO", "module": "orders", "function": "place_order", "message": "Placing order | MARKET BUY BTCUSDT qty=0.01"}
+{"timestamp": "2026-06-01 11:54:14 UTC", "level": "DEBUG", "module": "client", "function": "get_price", "message": "Live price fetched | symbol=BTCUSDT price=72640.8"}
+{"timestamp": "2026-06-01 11:54:14 UTC", "level": "DEBUG", "module": "orders", "function": "check_risk", "message": "Risk check | symbol=BTCUSDT live=72640.8 entered=50000.0 deviation=-31.17%"}
+{"timestamp": "2026-06-01 11:54:19 UTC", "level": "INFO", "module": "orders", "function": "place_order", "message": "Placing order | LIMIT BUY BTCUSDT qty=0.01 price=50000.0"}
+{"timestamp": "2026-06-01 11:54:25 UTC", "level": "DEBUG", "module": "client", "function": "get_price", "message": "Live price fetched | symbol=BTCUSDT price=72640.8"}
+{"timestamp": "2026-06-01 11:54:26 UTC", "level": "DEBUG", "module": "client", "function": "get_price", "message": "Live price fetched | symbol=BTCUSDT price=72640.8"}
+{"timestamp": "2026-06-01 11:54:26 UTC", "level": "INFO", "module": "orders", "function": "place_order", "message": "DRY RUN | MARKET BUY BTCUSDT qty=0.01 live_price=72640.8 estimated_cost=726.41 USDT"}
+{"timestamp": "2026-06-01 11:54:26 UTC", "level": "INFO", "module": "cli", "function": "main", "message": "CLI session completed successfully"}
+{"timestamp": "2026-06-01 11:56:02 UTC", "level": "DEBUG", "module": "client", "function": "get_price", "message": "Live price | symbol=BTCUSDT price=72646.2"}
+{"timestamp": "2026-06-01 11:56:02 UTC", "level": "INFO", "module": "orders", "function": "place_order", "message": "Placing order | MARKET BUY BTCUSDT qty=0.01"}
+{"timestamp": "2026-06-01 11:56:02 UTC", "level": "DEBUG", "module": "client", "function": "post", "message": "Outgoing POST | /fapi/v1/order | params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01, 'timestamp': 1780314962775}"}
+{"timestamp": "2026-06-01 11:56:03 UTC", "level": "DEBUG", "module": "client", "function": "post", "message": "Response | orderId=13693122990 status=NEW"}
+{"timestamp": "2026-06-01 11:56:03 UTC", "level": "INFO", "module": "orders", "function": "place_order", "message": "Order success | orderId=13693122990 status=NEW executedQty=0.0000"}
+{"timestamp": "2026-06-01 11:56:03 UTC", "level": "INFO", "module": "cli", "function": "main", "message": "CLI session completed successfully"}
+{"timestamp": "2026-06-01 11:56:14 UTC", "level": "DEBUG", "module": "client", "function": "get_price", "message": "Live price | symbol=BTCUSDT price=72648.8"}
+{"timestamp": "2026-06-01 11:56:14 UTC", "level": "DEBUG", "module": "orders", "function": "check_risk", "message": "Risk check | symbol=BTCUSDT live=72648.8 entered=50000.0 deviation=-31.18%"}
+{"timestamp": "2026-06-01 11:56:16 UTC", "level": "INFO", "module": "orders", "function": "place_order", "message": "Placing order | LIMIT BUY BTCUSDT qty=0.01 price=50000.0"}
+{"timestamp": "2026-06-01 11:56:16 UTC", "level": "DEBUG", "module": "client", "function": "post", "message": "Outgoing POST | /fapi/v1/order | params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 0.01, 'price': 50000.0, 'timeInForce': 'GTC', 'timestamp': 1780314976751}"}
+{"timestamp": "2026-06-01 11:56:17 UTC", "level": "DEBUG", "module": "client", "function": "post", "message": "Response | orderId=13693139575 status=NEW"}
+{"timestamp": "2026-06-01 11:56:17 UTC", "level": "INFO", "module": "orders", "function": "place_order", "message": "Order success | orderId=13693139575 status=NEW executedQty=0.0000"}
+{"timestamp": "2026-06-01 11:56:17 UTC", "level": "INFO", "module": "cli", "function": "main", "message": "CLI session completed successfully"}
+{"timestamp": "2026-06-01 11:56:31 UTC", "level": "DEBUG", "module": "client", "function": "get_price", "message": "Live price | symbol=BTCUSDT price=72648.7"}
+{"timestamp": "2026-06-01 11:56:32 UTC", "level": "INFO", "module": "cli", "function": "run_watch_mode", "message": "Watch mode started | symbol=BTCUSDT side=BUY target=999999.0 qty=0.01"}
+{"timestamp": "2026-06-01 11:56:32 UTC", "level": "DEBUG", "module": "client", "function": "get_price", "message": "Live price | symbol=BTCUSDT price=72648.7"}
+{"timestamp": "2026-06-01 11:56:32 UTC", "level": "INFO", "module": "cli", "function": "run_watch_mode", "message": "Watch mode triggered | symbol=BTCUSDT current=72648.7 target=999999.0"}
+{"timestamp": "2026-06-01 11:56:32 UTC", "level": "INFO", "module": "orders", "function": "place_order", "message": "Placing order | MARKET BUY BTCUSDT qty=0.01"}
+{"timestamp": "2026-06-01 11:56:32 UTC", "level": "DEBUG", "module": "client", "function": "post", "message": "Outgoing POST | /fapi/v1/order | params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01, 'timestamp': 1780314992614}"}
+{"timestamp": "2026-06-01 11:56:33 UTC", "level": "DEBUG", "module": "client", "function": "post", "message": "Response | orderId=13693156133 status=NEW"}
+{"timestamp": "2026-06-01 11:56:33 UTC", "level": "INFO", "module": "orders", "function": "place_order", "message": "Order success | orderId=13693156133 status=NEW executedQty=0.0000"}
+{"timestamp": "2026-06-01 15:12:37 UTC", "level": "DEBUG", "module": "client", "function": "get_price", "message": "Live price | symbol=BTCUSDT price=71457.0"}
+{"timestamp": "2026-06-01 15:12:38 UTC", "level": "DEBUG", "module": "client", "function": "get_price", "message": "Live price | symbol=BTCUSDT price=71450.1"}
+{"timestamp": "2026-06-01 15:12:38 UTC", "level": "INFO", "module": "orders", "function": "place_order", "message": "DRY RUN | MARKET BUY BTCUSDT qty=0.01 live_price=71450.1 estimated_cost=714.5 USDT"}
+{"timestamp": "2026-06-01 15:12:38 UTC", "level": "INFO", "module": "cli", "function": "main", "message": "CLI session completed successfully"}
+{"timestamp": "2026-06-01 15:22:36 UTC", "level": "DEBUG", "module": "client", "function": "get_price", "message": "Live price | symbol=BTCUSDT price=71272.0"}
+{"timestamp": "2026-06-01 15:22:36 UTC", "level": "INFO", "module": "orders", "function": "place_order", "message": "Placing order | MARKET BUY BTCUSDT qty=0.01"}
+{"timestamp": "2026-06-01 15:22:36 UTC", "level": "DEBUG", "module": "client", "function": "post", "message": "Outgoing POST | /fapi/v1/order | params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01, 'timestamp': 1780327356121}"}
+{"timestamp": "2026-06-01 15:22:36 UTC", "level": "DEBUG", "module": "client", "function": "post", "message": "Response | orderId=13707108244 status=NEW"}
+{"timestamp": "2026-06-01 15:22:36 UTC", "level": "INFO", "module": "orders", "function": "place_order", "message": "Order success | orderId=13707108244 status=NEW executedQty=0.0000"}
+{"timestamp": "2026-06-01 15:22:36 UTC", "level": "INFO", "module": "cli", "function": "main", "message": "CLI session completed successfully"}
+{"timestamp": "2026-06-01 15:22:43 UTC", "level": "DEBUG", "module": "client", "function": "get_price", "message": "Live price | symbol=BTCUSDT price=71280.0"}
+{"timestamp": "2026-06-01 15:22:43 UTC", "level": "DEBUG", "module": "orders", "function": "check_risk", "message": "Risk check | symbol=BTCUSDT live=71280.00 entered=70000.0 deviation=-1.80%"}
+{"timestamp": "2026-06-01 15:22:43 UTC", "level": "INFO", "module": "orders", "function": "place_order", "message": "Placing order | LIMIT SELL BTCUSDT qty=0.01 price=70000.0"}
+{"timestamp": "2026-06-01 15:22:43 UTC", "level": "DEBUG", "module": "client", "function": "post", "message": "Outgoing POST | /fapi/v1/order | params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'price': 70000.0, 'timeInForce': 'GTC', 'timestamp': 1780327363575}"}
+{"timestamp": "2026-06-01 15:22:44 UTC", "level": "DEBUG", "module": "client", "function": "post", "message": "Response | orderId=13707115708 status=NEW"}
+{"timestamp": "2026-06-01 15:22:44 UTC", "level": "INFO", "module": "orders", "function": "place_order", "message": "Order success | orderId=13707115708 status=NEW executedQty=0.0000"}
+{"timestamp": "2026-06-01 15:22:44 UTC", "level": "INFO", "module": "cli", "function": "main", "message": "CLI session completed successfully"}
+{"timestamp": "2026-06-01 15:25:36 UTC", "level": "DEBUG", "module": "client", "function": "get_price", "message": "Live price | symbol=BTCUSDT price=71213.6"}
+{"timestamp": "2026-06-01 15:25:36 UTC", "level": "DEBUG", "module": "orders", "function": "check_risk", "message": "Risk check | symbol=BTCUSDT live=71213.60 entered=70000.0 deviation=-1.70%"}
+{"timestamp": "2026-06-01 15:25:36 UTC", "level": "INFO", "module": "orders", "function": "place_order", "message": "Placing order | LIMIT SELL BTCUSDT qty=0.01 price=70000.0"}
+{"timestamp": "2026-06-01 15:25:36 UTC", "level": "DEBUG", "module": "client", "function": "post", "message": "Outgoing POST | /fapi/v1/order | params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'price': 70000.0, 'timeInForce': 'GTC', 'timestamp': 1780327536666}"}
+{"timestamp": "2026-06-01 15:25:37 UTC", "level": "DEBUG", "module": "client", "function": "post", "message": "Response | orderId=13707339993 status=NEW"}
+{"timestamp": "2026-06-01 15:25:37 UTC", "level": "INFO", "module": "orders", "function": "place_order", "message": "Order success | orderId=13707339993 status=NEW executedQty=0.0000"}
+{"timestamp": "2026-06-01 15:25:37 UTC", "level": "INFO", "module": "cli", "function": "main", "message": "CLI session completed successfully"}
+{"timestamp": "2026-06-01 15:31:35 UTC", "level": "INFO", "module": "cli", "function": "main", "message": "CLI COMMAND | symbol=BTCUSDT | side=BUY | type=MARKET | qty=0.01 | price=None | dry_run=False | watch=False"}
+{"timestamp": "2026-06-01 15:31:36 UTC", "level": "DEBUG", "module": "client", "function": "get_price", "message": "Live price | symbol=BTCUSDT price=71299.8"}
+{"timestamp": "2026-06-01 15:31:36 UTC", "level": "INFO", "module": "orders", "function": "place_order", "message": "Placing order | MARKET BUY BTCUSDT qty=0.01"}
+{"timestamp": "2026-06-01 15:31:36 UTC", "level": "DEBUG", "module": "client", "function": "post", "message": "Outgoing POST | /fapi/v1/order | params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01, 'timestamp': 1780327896059}"}
+{"timestamp": "2026-06-01 15:31:36 UTC", "level": "DEBUG", "module": "client", "function": "post", "message": "Response | orderId=13707740723 status=NEW"}
+{"timestamp": "2026-06-01 15:31:36 UTC", "level": "INFO", "module": "orders", "function": "place_order", "message": "Order success | orderId=13707740723 status=NEW executedQty=0.0000"}
+{"timestamp": "2026-06-01 15:31:36 UTC", "level": "INFO", "module": "cli", "function": "main", "message": "CLI session completed successfully"}
+{"timestamp": "2026-06-01 15:36:09 UTC", "level": "INFO", "module": "cli", "function": "main", "message": "CLI COMMAND | symbol=BTCUSDT | side=BUY | type=MARKET | qty=0.01 | price=None | dry_run=False | watch=False"}
+{"timestamp": "2026-06-01 15:36:09 UTC", "level": "DEBUG", "module": "client", "function": "get_price", "message": "Live price | symbol=BTCUSDT price=71470.1"}
+{"timestamp": "2026-06-01 15:36:09 UTC", "level": "INFO", "module": "orders", "function": "place_order", "message": "Placing order | MARKET BUY BTCUSDT qty=0.01"}
+{"timestamp": "2026-06-01 15:36:09 UTC", "level": "DEBUG", "module": "client", "function": "post", "message": "Outgoing POST | /fapi/v1/order | params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01, 'timestamp': 1780328169904}"}
+{"timestamp": "2026-06-01 15:36:10 UTC", "level": "DEBUG", "module": "client", "function": "post", "message": "Response | orderId=13708031520 status=NEW"}
+{"timestamp": "2026-06-01 15:36:10 UTC", "level": "INFO", "module": "orders", "function": "place_order", "message": "Order success | orderId=13708031520 status=NEW executedQty=0.0000"}
+{"timestamp": "2026-06-01 15:36:10 UTC", "level": "INFO", "module": "cli", "function": "main", "message": "CLI session completed successfully"}
+{"timestamp": "2026-06-01 15:36:10 UTC", "level": "INFO", "module": "cli", "function": "main", "message": "CLI command received", "symbol": "BTCUSDT", "side": "BUY", "order_type": "MARKET", "quantity": 0.01, "price": null}
+{"timestamp": "2026-06-01 15:36:36 UTC", "level": "INFO", "module": "cli", "function": "main", "message": "CLI COMMAND | symbol=BTCUSDT | side=SELL | type=LIMIT | qty=0.01 | price=70000.0 | dry_run=False | watch=False"}
+{"timestamp": "2026-06-01 15:36:37 UTC", "level": "DEBUG", "module": "client", "function": "get_price", "message": "Live price | symbol=BTCUSDT price=71470.1"}
+{"timestamp": "2026-06-01 15:36:37 UTC", "level": "DEBUG", "module": "orders", "function": "check_risk", "message": "Risk check | symbol=BTCUSDT live=71470.10 entered=70000.0 deviation=-2.06%"}
+{"timestamp": "2026-06-01 15:36:37 UTC", "level": "INFO", "module": "orders", "function": "place_order", "message": "Placing order | LIMIT SELL BTCUSDT qty=0.01 price=70000.0"}
+{"timestamp": "2026-06-01 15:36:37 UTC", "level": "DEBUG", "module": "client", "function": "post", "message": "Outgoing POST | /fapi/v1/order | params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'price': 70000.0, 'timeInForce': 'GTC', 'timestamp': 1780328197134}"}
+{"timestamp": "2026-06-01 15:36:37 UTC", "level": "DEBUG", "module": "client", "function": "post", "message": "Response | orderId=13708056796 status=NEW"}
+{"timestamp": "2026-06-01 15:36:37 UTC", "level": "INFO", "module": "orders", "function": "place_order", "message": "Order success | orderId=13708056796 status=NEW executedQty=0.0000"}
+{"timestamp": "2026-06-01 15:36:37 UTC", "level": "INFO", "module": "cli", "function": "main", "message": "CLI session completed successfully"}
+{"timestamp": "2026-06-01 15:36:37 UTC", "level": "INFO", "module": "cli", "function": "main", "message": "CLI command received", "symbol": "BTCUSDT", "side": "SELL", "order_type": "LIMIT", "quantity": 0.01, "price": 70000.0}
+{"timestamp": "2026-06-01 16:09:22 UTC", "level": "INFO", "module": "cli", "function": "main", "message": "CLI COMMAND | symbol=BTCUSDT | side=BUY | type=MARKET | qty=0.01 | price=None | dry_run=False | watch=False"}
+{"timestamp": "2026-06-01 16:09:23 UTC", "level": "DEBUG", "module": "client", "function": "get_price", "message": "Live price | symbol=BTCUSDT price=71030.0"}
+{"timestamp": "2026-06-01 16:09:23 UTC", "level": "INFO", "module": "orders", "function": "place_order", "message": "Placing order | MARKET BUY BTCUSDT qty=0.01"}
+{"timestamp": "2026-06-01 16:09:23 UTC", "level": "DEBUG", "module": "client", "function": "post", "message": "Outgoing POST | /fapi/v1/order | params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01, 'timestamp': 1780330163206}"}
+{"timestamp": "2026-06-01 16:09:24 UTC", "level": "DEBUG", "module": "client", "function": "post", "message": "Response | orderId=13710503691 status=NEW"}
+{"timestamp": "2026-06-01 16:09:24 UTC", "level": "INFO", "module": "orders", "function": "place_order", "message": "Order success | orderId=13710503691 status=NEW executedQty=0.0000"}
+{"timestamp": "2026-06-01 16:09:24 UTC", "level": "INFO", "module": "cli", "function": "main", "message": "CLI session completed successfully"}
+{"timestamp": "2026-06-01 16:09:24 UTC", "level": "INFO", "module": "cli", "function": "main", "message": "CLI command received", "symbol": "BTCUSDT", "side": "BUY", "order_type": "MARKET", "quantity": 0.01, "price": null}
+{"timestamp": "2026-06-01 16:10:12 UTC", "level": "INFO", "module": "cli", "function": "main", "message": "CLI COMMAND | symbol=BTCUSDT | side=BUY | type=LIMIT | qty=0.01 | price=50000.0 | dry_run=False | watch=False"}
+{"timestamp": "2026-06-01 16:10:13 UTC", "level": "DEBUG", "module": "client", "function": "get_price", "message": "Live price | symbol=BTCUSDT price=71000.0"}
+{"timestamp": "2026-06-01 16:10:13 UTC", "level": "DEBUG", "module": "orders", "function": "check_risk", "message": "Risk check | symbol=BTCUSDT live=71000.00 entered=50000.0 deviation=-29.58%"}
+{"timestamp": "2026-06-01 16:10:18 UTC", "level": "INFO", "module": "orders", "function": "place_order", "message": "Placing order | LIMIT BUY BTCUSDT qty=0.01 price=50000.0"}
+{"timestamp": "2026-06-01 16:10:18 UTC", "level": "DEBUG", "module": "client", "function": "post", "message": "Outgoing POST | /fapi/v1/order | params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 0.01, 'price': 50000.0, 'timeInForce': 'GTC', 'timestamp': 1780330218117}"}
+{"timestamp": "2026-06-01 16:10:18 UTC", "level": "DEBUG", "module": "client", "function": "post", "message": "Response | orderId=13710585897 status=NEW"}
+{"timestamp": "2026-06-01 16:10:18 UTC", "level": "INFO", "module": "orders", "function": "place_order", "message": "Order success | orderId=13710585897 status=NEW executedQty=0.0000"}
+{"timestamp": "2026-06-01 16:10:18 UTC", "level": "INFO", "module": "cli", "function": "main", "message": "CLI session completed successfully"}
+{"timestamp": "2026-06-01 16:10:18 UTC", "level": "INFO", "module": "cli", "function": "main", "message": "CLI command received", "symbol": "BTCUSDT", "side": "BUY", "order_type": "LIMIT", "quantity": 0.01, "price": 50000.0}
+{"timestamp": "2026-06-01 16:11:06 UTC", "level": "INFO", "module": "cli", "function": "main", "message": "CLI COMMAND | symbol=BTCUSDT | side=BUY | type=MARKET | qty=0.01 | price=None | dry_run=False | watch=True"}
+{"timestamp": "2026-06-01 16:11:07 UTC", "level": "DEBUG", "module": "client", "function": "get_price", "message": "Live price | symbol=BTCUSDT price=70831.6"}
+{"timestamp": "2026-06-01 16:11:07 UTC", "level": "INFO", "module": "cli", "function": "run_watch_mode", "message": "Watch mode started | symbol=BTCUSDT side=BUY target=999999.0 qty=0.01"}
+{"timestamp": "2026-06-01 16:11:07 UTC", "level": "DEBUG", "module": "client", "function": "get_price", "message": "Live price | symbol=BTCUSDT price=70831.6"}
+{"timestamp": "2026-06-01 16:11:07 UTC", "level": "INFO", "module": "cli", "function": "run_watch_mode", "message": "Watch mode triggered | symbol=BTCUSDT current=70831.6 target=999999.0"}
+{"timestamp": "2026-06-01 16:11:07 UTC", "level": "INFO", "module": "orders", "function": "place_order", "message": "Placing order | MARKET BUY BTCUSDT qty=0.01"}
+{"timestamp": "2026-06-01 16:11:07 UTC", "level": "DEBUG", "module": "client", "function": "post", "message": "Outgoing POST | /fapi/v1/order | params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01, 'timestamp': 1780330267858}"}
+{"timestamp": "2026-06-01 16:11:08 UTC", "level": "DEBUG", "module": "client", "function": "post", "message": "Response | orderId=13710638724 status=NEW"}
+{"timestamp": "2026-06-01 16:11:08 UTC", "level": "INFO", "module": "orders", "function": "place_order", "message": "Order success | orderId=13710638724 status=NEW executedQty=0.0000"}
+{"timestamp": "2026-06-01 16:11:51 UTC", "level": "INFO", "module": "cli", "function": "main", "message": "CLI COMMAND | symbol=BTCUSDT | side=BUY | type=MARKET | qty=0.01 | price=None | dry_run=True | watch=False"}
+{"timestamp": "2026-06-01 16:11:52 UTC", "level": "DEBUG", "module": "client", "function": "get_price", "message": "Live price | symbol=BTCUSDT price=70814.1"}
+{"timestamp": "2026-06-01 16:11:53 UTC", "level": "DEBUG", "module": "client", "function": "get_price", "message": "Live price | symbol=BTCUSDT price=70814.1"}
+{"timestamp": "2026-06-01 16:11:53 UTC", "level": "INFO", "module": "orders", "function": "place_order", "message": "DRY RUN | MARKET BUY BTCUSDT qty=0.01 live_price=70814.1 estimated_cost=708.14 USDT"}
+{"timestamp": "2026-06-01 16:11:53 UTC", "level": "INFO", "module": "cli", "function": "main", "message": "CLI session completed successfully"}
+{"timestamp": "2026-06-01 16:11:53 UTC", "level": "INFO", "module": "cli", "function": "main", "message": "CLI command received", "symbol": "BTCUSDT", "side": "BUY", "order_type": "MARKET", "quantity": 0.01, "price": null}
